@@ -34,19 +34,16 @@ install_requires = [
 
 if sys.version_info < (2, 7):  # 2.6
     install_requires.extend([
-        'wsgidav<2.0.0',
         'tornado>=3.2,<4.5',
         'pyquery<1.3.0',
     ])
 elif sys.version_info >= (3, 0):  # 3.*
     install_requires.extend([
-        'wsgidav>=2.0.0',
         'tornado>=3.2,<=4.5.3',
         'pyquery',
     ])
 else:  # 2.7
     install_requires.extend([
-        'wsgidav',
         'tornado>=3.2,<=4.5.3',
         'pyquery',
     ])
